@@ -1,0 +1,121 @@
+.element-atom,
+.interactive-atom {
+  margin: 0 !important;
+  overflow: hidden;
+
+  // Page Wrapper //
+  .gv-page-width {
+    margin: 0 auto;
+    @each $bp in (phablet, tablet, desktop, leftCol, wide) {
+      @include mq($bp) {
+        max-width: map-get($mq-breakpoints, $bp);
+      }
+    }
+  }
+
+  .l-side-margins {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      border-left: 1px solid $neutral-46;
+      z-index: 1;
+
+      display: none;
+
+      @include mq(leftCol) {
+        display: block;
+        left: 0px;
+        height: calc(100%);
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      border-left: 1px solid $neutral-46;
+      z-index: 1;
+
+      display: none;
+
+      @include mq(leftCol) {
+        display: block;
+        right: 0px;
+        height: calc(100%);
+      }
+    }
+  }
+
+  .page-wrapper {
+    padding: 0;
+    position: relative;
+  }
+
+  .gv-main-column {
+    margin: 0 10px;
+    max-width: 640px; // padding: 0 10px 20px 10px;
+
+    @include mq(phablet) {
+      margin: 0 20px;
+    }
+    @include mq(tablet) {
+      max-width: 640px;
+      margin: 0 20px;
+    }
+    @include mq(leftCol) {
+      margin: 0 0 0 180px;
+    }
+    @include mq(wide) {
+      margin: 0 0 0 260px;
+    }
+
+    .gv-main-column-left {
+      @include mq(leftCol) {
+        width: 160px;
+        padding-left: 10px;
+        float: left;
+      }
+    }
+
+    .gv-main-column-right {
+      @include mq(leftCol) {
+        width: calc(100% - 170px);
+        float: right;
+      }
+    }
+  }
+
+  .gv-left-column {
+    display: block;
+    margin: 0 10px;
+    max-width: 650px; // padding: 0 10px 20px 10px;
+    @include mq(mobileLandscape) {
+      margin: 0 10px;
+    }
+
+    @include mq(phablet) {
+      margin: 0 10px;
+    }
+
+    @include mq(tablet) {
+      margin: 0 10px;
+    }
+
+    @include mq(leftCol) {
+      float: left;
+      margin: 0 0 0 20px;
+      width: 150px;
+    }
+
+    @include mq(wide) {
+      margin: 0 0 0 20px;
+      width: 230px;
+    }
+  }
+}
