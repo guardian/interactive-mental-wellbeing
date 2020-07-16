@@ -3,8 +3,14 @@
         {{#copy}}
         <p>{{.}}</p>
         {{/copy}}
+
+        <div class="gv-navs">
+          {{#navs}}
+          <div class="gv-nav" data-anchor="{{anchor}}">{{nav}}</div>
+          {{/navs}}
+        </div>
       </div>
-      <div class="section section-one">
+      <div class="section section-one section-{{anchor1}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header1}}</h3>
