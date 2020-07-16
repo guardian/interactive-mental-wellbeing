@@ -98,3 +98,19 @@
     }
   }
 }
+
+.gv-navs {
+  margin: 20px 0 10px 0;
+  .gv-nav {
+    display: inline-block;
+    color: #fff;
+    background-color: #121212;
+    @include fs-textSans(3);
+    font-weight: 600;
+    border-radius: 44px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
