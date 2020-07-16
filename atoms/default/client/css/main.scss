@@ -91,7 +91,7 @@
 }
 
 .gv-navs {
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   .gv-nav {
     display: inline-block;
     color: #fff;
@@ -101,6 +101,7 @@
     border-radius: 44px;
     padding: 10px 20px;
     margin-right: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
   }
 }
