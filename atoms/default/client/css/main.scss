@@ -84,8 +84,17 @@
   }
   &-header {
     display: flex;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      flex-direction: row;
+    }
   }
   &-image {
     max-width: 400px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
