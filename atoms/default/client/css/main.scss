@@ -40,9 +40,13 @@
   }
 
   h4 {
-    @include fs-headline(4);
+    @include fs-headline(3);
     font-weight: 200;
     font-style: italic;
+    @include mq(mobileMedium) {
+      @include fs-headline(4);
+      font-weight: 200;
+    }
     @include mq(tablet) {
       @include fs-headline(5);
       font-weight: 200;
@@ -120,5 +124,19 @@
     margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+  }
+}
+
+.subhead {
+  @include fs-headline(2);
+  font-weight: 700;
+  margin-top: 24px;
+  background-color: $highlight-main;
+  display: inline;
+  padding: 0 6px;
+  margin-left: -6px;
+  @include mq(tablet) {
+    padding: 0 10px;
+    margin-left: -10px;
   }
 }
