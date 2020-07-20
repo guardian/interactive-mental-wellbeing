@@ -152,11 +152,12 @@
 .subhead {
   @include fs-headline(2);
   font-weight: 700;
-  margin-top: 24px;
+  margin-top: 12px;
   background-color: $highlight-main;
-  display: inline;
+  display: inline-block;
   padding: 0 6px;
   margin-left: -6px;
+  // margin-top: 24px;
   @include mq(tablet) {
     padding: 0 10px;
     margin-left: -10px;
