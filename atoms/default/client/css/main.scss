@@ -164,6 +164,12 @@
   }
 }
 
+.subheader {
+  @include fs-headline(1);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .gv-quicknav-left {
   font-size: 12px;
 
