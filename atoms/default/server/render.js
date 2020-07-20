@@ -5,11 +5,15 @@ import dropdown from "./atoms/default/server/templates/dropdown.html!text";
 import graphic1 from "./atoms/default/server/templates/graphic_1.html!text";
 import graphic3 from "./atoms/default/server/templates/graphic_3.html!text";
 import graphic4 from "./atoms/default/server/templates/graphic_4.html!text";
+import graphic5 from "./atoms/default/server/templates/graphic_5.html!text";
+import graphic6 from "./atoms/default/server/templates/graphic_6.html!text";
+import graphic7 from "./atoms/default/server/templates/graphic_7.html!text";
+import graphic8 from "./atoms/default/server/templates/graphic_8.html!text";
 import rp from "request-promise";
 import { writeFileSync } from "fs";
 import Mustache from "mustache";
 
-const partials = { share, dropdown, graphic1, graphic3, graphic4 };
+const partials = { share, dropdown, graphic1, graphic3, graphic4, graphic5, graphic6, graphic7, graphic8 };
 
 export async function render() {
   const html = await rp(
