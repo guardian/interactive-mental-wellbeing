@@ -1,12 +1,13 @@
 
 import mainHTML from "./atoms/default/server/templates/main.html!text";
 import share from "./atoms/default/server/templates/share.html!text";
+import dropdown from "./atoms/default/server/templates/dropdown.html!text";
 import graphic1 from "./atoms/default/server/templates/graphic_1.html!text";
 import rp from "request-promise";
 import { writeFileSync } from "fs";
 import Mustache from "mustache";
 
-const partials = { share, graphic1 };
+const partials = { share, dropdown, graphic1 };
 
 export async function render() {
   const html = await rp(

@@ -9,8 +9,9 @@
           <div class="gv-nav" data-anchor="{{anchor}}">{{nav}}</div>
           {{/navs}}
         </div>
+
       </div>
-      <div class="section section-one section-{{anchor1}}">
+      <div class="section section-one section-{{anchor1}}" data-anchor="{{anchor1}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header1}}</h3>
@@ -37,9 +38,10 @@
           <p>{{{.}}}</p>
           {{/copy5}}
           {{>graphic1}}
+          {{>dropdown}}
         </div>
       </div>
-      <div class="section section-two section-{{anchor2}}">
+      <div class="section section-two section-{{anchor2}}" data-anchor="{{anchor2}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header2}}</h3>
@@ -63,9 +65,10 @@
           {{#copy9}}
           <p>{{{.}}}</p>
           {{/copy9}}
+          {{>dropdown}}
         </div>
       </div>
-      <div class="section section-three section-{{anchor3}}">
+      <div class="section section-three section-{{anchor3}}" data-anchor="{{anchor3}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header3}}</h3>
@@ -89,9 +92,10 @@
           {{#copy13}}
           <p>{{{.}}}</p>
           {{/copy13}}
+          {{>dropdown}}
         </div>
       </div>
-      <div class="section section-four section-{{anchor4}}">
+      <div class="section section-four section-{{anchor4}}" data-anchor="{{anchor4}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header4}}</h3>
@@ -115,9 +119,10 @@
           {{#copy17}}
           <p>{{{.}}}</p>
           {{/copy17}}
+          {{>dropdown}}
         </div>
       </div>
-      <div class="section section-five section-{{anchor5}}">
+      <div class="section section-five section-{{anchor5}}" data-anchor="{{anchor5}}">
         <div class="section-header">
           <div class="section-copy">
             <h3>{{header5}}</h3>
@@ -129,6 +134,7 @@
           {{#copy18}}
           <p>{{{.}}}</p>
           {{/copy18}}
+          {{>dropdown}}
         </div>
       </div>
     </div>
