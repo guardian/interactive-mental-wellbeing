@@ -4,6 +4,7 @@
 // @import "share";
 // @import "page";
 @import "enhancer";
+@import "header";
 
 .interactive-atom {
   margin: 0;
@@ -241,8 +242,8 @@
 }
 
 .gu-graphic-header {
-border-top: 1px solid $neutral-86;
-margin-top: 20px;
+  border-top: 1px solid $neutral-86;
+  margin-top: 20px;
 }
 
 .gu-graphic-footer {
