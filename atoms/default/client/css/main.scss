@@ -37,12 +37,14 @@
 .interactive-atom {
   h3 {
     @include fs-titlepiece(1);
+    margin-bottom: 0px;
   }
 
   h4 {
     @include fs-headline(3);
     font-weight: 200;
     font-style: italic;
+    padding-bottom: 24px;
     @include mq(mobileMedium) {
       @include fs-headline(4);
       font-weight: 200;
@@ -57,9 +59,11 @@
 .section {
   &-copy {
     max-width: 540px;
+    order: 2;
 
     @include mq(tablet) {
       min-height: 338px;
+      order: 1;
     }
 
     @include mq(leftCol) {
@@ -108,6 +112,13 @@
     width: 100%;
     max-width: 400px;
     height: auto;
+    padding-top: 6px;
+    // padding-bottom: 24px;
+    order: 1;
+
+    @include mq(tablet) {
+      order: 2;
+    }
   }
   &-image {
     width: 100%;
@@ -153,7 +164,7 @@
 
   color: #fff;
 
-  margin: 20px 0 20px 0;
+  margin: 12px 0 48px 0;
 
   span {
     display: block;
