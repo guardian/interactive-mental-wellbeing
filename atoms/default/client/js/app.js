@@ -15,8 +15,10 @@ $$(".gv-nav").forEach((el) => {
 
     let anchor = section.getAttribute("data-anchor");
     let jumpTo = section.querySelector(".gv-jumpto");
-    jumpTo.value = anchor;
-    
+    if (jumpTo != null && jumpTo != undefined) {
+        jumpTo.value = anchor;
+    }
+  
     });
 
 
@@ -24,6 +26,8 @@ $$(".gv-nav").forEach((el) => {
 
     jumpTo.addEventListener("change", function( e ) {
     
+    
+    //console.log(e.target.value);
     scrollTo( e.target.value );
     
     }, false );
