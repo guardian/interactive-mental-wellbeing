@@ -104,9 +104,14 @@
       flex-direction: row;
     }
   }
-  &-image {
+  &-image-wrapper {
     width: 100%;
     max-width: 400px;
+    height: auto;
+  }
+  &-image {
+    width: 100%;
+    //max-width: 400px;
     height: auto;
   }
 }
