@@ -50,6 +50,12 @@
     @include mq(tablet) {
       @include fs-headline(5);
       font-weight: 200;
+      font-size: 30px;
+      line-height: 38px;
+    }
+    @include mq(desktop) {
+      @include fs-headline(5);
+      font-weight: 200;
     }
   }
 }
