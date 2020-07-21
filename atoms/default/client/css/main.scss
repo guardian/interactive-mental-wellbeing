@@ -18,6 +18,18 @@
   }
 }
 
+.gv-divider {
+  width: calc(100% + 20px);
+  position: absolute;
+  left: -20px;
+  border: none;
+  border-top: 1px solid $neutral-86;
+  margin-top: -10px;
+  @include mq(mobileLandscape) {
+    width: calc(100% + 40px);
+  }
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus, textarea:focus, input:focus {
           font-size: 16px;
@@ -172,7 +184,7 @@
 }
 
 .subheader {
-  @include fs-headline(1);
+  @include fs-headline(3);
   font-weight: 600;
   margin: 20px 0;
 }
@@ -260,4 +272,8 @@
 .gu-graphic-footer {
   border-bottom: 1px solid $neutral-86;
   margin-bottom: 20px;
+}
+
+.gv-outro {
+  padding-bottom: 40px;
 }
