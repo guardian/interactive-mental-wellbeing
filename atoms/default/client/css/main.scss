@@ -18,6 +18,12 @@
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus, textarea:focus, input:focus {
+          font-size: 16px;
+      }
+}
+
 .content__main-column--interactive {
   & > p,
   & > h2,
@@ -185,7 +191,7 @@
 
     font-family: "Guardian Text Sans Web", Helvetica, Arial, sans-serif;
 
-    font-size: 12px;
+    font-size: 13px;
 
     font-weight: 600;
 
@@ -219,7 +225,7 @@
 
     //background-size: 16px auto;
 
-    padding: 5px 15px;
+    padding: 2px 15px;
 
     font-family: "Guardian Text Sans Web", Helvetica, Arial, sans-serif;
 
@@ -227,9 +233,9 @@
 
     border: 1px solid #121212;
 
-    width: 158px;
+    width: 190px;
 
-    padding-right: 40px;
+    padding-right: 0px;
 
     //width: 100%;
 
@@ -237,7 +243,12 @@
 
     font-weight: 700;
 
-    font-size: 12px;
+    font-size: 16px;
+    
+      transform-origin: top left;
+      transform: scale(0.875);            //  14px / 16px
+      //padding: 4.57px;                    // 4px / 0.875
+  
   }
 }
 

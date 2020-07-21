@@ -44,6 +44,7 @@ $$(".gv-nav").forEach((el) => {
         //window.scrollTo({top: y, behavior: 'smooth'});
 
         scrollToSmoothly(y, 500);
+        //window.scrollTo(0, y);
 
     }
 
