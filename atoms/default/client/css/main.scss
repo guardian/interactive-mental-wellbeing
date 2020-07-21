@@ -187,6 +187,11 @@
   @include fs-headline(3);
   font-weight: 600;
   margin: 20px 0;
+
+  @include mq(mobileLandscape) {
+    // @include fs-headline(4);
+    // font-weight: 600;
+  }
 }
 
 .gv-quicknav-left {
@@ -261,6 +266,21 @@
       transform: scale(0.875);            //  14px / 16px
       //padding: 4.57px;                    // 4px / 0.875
   
+  }
+}
+
+.gv-bullet {
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #121212;
+    border-radius: 50%;
+    top: 5px;
   }
 }
 
