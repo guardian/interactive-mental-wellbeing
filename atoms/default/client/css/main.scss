@@ -31,9 +31,11 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  select:focus, textarea:focus, input:focus {
-          font-size: 16px;
-      }
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
 }
 
 .content__main-column--interactive {
@@ -171,22 +173,29 @@
 .subhead {
   @include fs-headline(2);
   font-weight: 700;
-  margin-top: 12px;
-  background-color: $highlight-main;
-  display: inline-block;
-  padding: 0 6px;
-  margin-left: -6px;
-  // margin-top: 24px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+
+  span {
+    background: linear-gradient(#ffe500, #ffe500) no-repeat;
+    box-shadow: 4px 0 0 #ffe500, -4px 0 0 #ffe500;
+    display: inline;
+  }
   @include mq(tablet) {
-    padding: 0 10px;
-    margin-left: -10px;
+    span {
+      background: linear-gradient(#ffe500, #ffe500) no-repeat;
+      box-shadow: 4px 0 0 #ffe500, -10px 0 0 #ffe500;
+      display: inline;
+    }
+    margin-left: 0px;
   }
 }
 
 .subheader {
   @include fs-headline(3);
   font-weight: 600;
-  margin: 20px 0;
+  margin: 6px 0 12px 0;
+  font-size: 22px;
 
   @include mq(mobileLandscape) {
     // @include fs-headline(4);
@@ -261,11 +270,10 @@
     font-weight: 700;
 
     font-size: 16px;
-    
-      transform-origin: top left;
-      transform: scale(0.875);            //  14px / 16px
-      //padding: 4.57px;                    // 4px / 0.875
-  
+
+    transform-origin: top left;
+    transform: scale(0.875); //  14px / 16px
+    //padding: 4.57px;                    // 4px / 0.875
   }
 }
 

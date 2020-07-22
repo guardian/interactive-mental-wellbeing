@@ -51,15 +51,15 @@
       width: 980px;
     }
     @include mq(leftCol) {
-      //left: -180px;
-      //width: 1140px;
+      left: -180px;
+      width: 1140px;
       left: -9px;
-      width: 969px;
+      // width: 969px;
     }
     @include mq(wide) {
-      // left: -260px;
-      // width: 1300px;
-      width:1049px;
+      left: -260px;
+      width: 1300px;
+      // width:1049px;
     }
   }
 }
