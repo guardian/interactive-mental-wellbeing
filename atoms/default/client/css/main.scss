@@ -65,7 +65,7 @@
     @include fs-headline(3);
     font-weight: 200;
     font-style: italic;
-    padding-bottom: 24px;
+    padding-bottom: 48px;
     @include mq(mobileMedium) {
       @include fs-headline(4);
       font-weight: 200;
@@ -75,6 +75,7 @@
       font-weight: 200;
       font-size: 30px;
       line-height: 38px;
+      padding-bottom: 24px;
     }
     @include mq(desktop) {
       @include fs-headline(5);
