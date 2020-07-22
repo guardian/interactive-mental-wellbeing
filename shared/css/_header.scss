@@ -66,11 +66,12 @@
 
 .content--interactive .content__main-column .content__headline {
   @include fs-titlepiece(1);
-  font-size: 36px;
+  font-size: 34px;
   position: relative;
   padding-top: 0;
   @include mq(mobileMedium) {
     @include fs-titlepiece(1);
+    font-size: 40px;
   }
 
   @include mq(tablet) {
