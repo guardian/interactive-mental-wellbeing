@@ -231,6 +231,7 @@ a,
   .headline:after {
     top: calc(60vw + 10px);
     width: calc(100% + 10px);
+    display: none;
   }
   .standfirst {
     @include fs-headline(1);
